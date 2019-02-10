@@ -8,6 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--the use of font-awesome icons-->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Ristorante Con Fusion: About Us</title>
 
@@ -16,18 +19,26 @@
 <body>
 
       <!--this is the navigation menu for our site-->
+      <!--navbar for the navigation menu. whereas navbar-dark for the dark menu,navbar-expand-sm responsive design for small screens-->
+      <!--fixed top class for maintening the menu fixed on the top of the page-->
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
             <div class="container">
+              <!--toggle button for small screens responsive design-->
+              <!--navigation bar must be collapsed in the small extra screens, that's why we used these lines of code-->
+              <!--the class navbar-toogler for creating the the toggle button and data-toggle="collapse" to collapse the button-->
               <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+                <!--this line of code allows us to create the toggle button by using the class navbar-toggler-icon-->
                     <span class="navbar-toggler-icon"></span>
               </button>
+              <!--the class navbar-brand for presenting the brand of the website and mr auto-->
                 <a class="navbar-brand mr-auto" href="./index.html">Ristorante con Fusion</a>
+                <!--to hide the menu in the small screens with the toggle button-->
                 <div class="collapse navbar-collapse" id="Navbar">
                       <ul class="navbar-nav mr-auto">
-                        <li class="navbar-item"><a class="nav-link" href="./index.html">Home</a></li>
-                        <li class="navbar-item active"><a class="nav-link" href="#">About</a></li>
-                        <li class="navbar-item"><a class="nav-link" href="#">Menu</a></li>
-                        <li class="navbar-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="navbar-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="navbar-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
+                        <li class="navbar-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                        <li class="navbar-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                       </ul>
                 </div>
 
@@ -46,7 +57,7 @@
             </div>
         </div>
     </header>
-
+<!--this is the breadcrumbs declaration-->
     <div class="container">
         <div class="row">
           <ol class="col-12 breadcrumb">
@@ -104,19 +115,19 @@
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
 		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
            </div>
